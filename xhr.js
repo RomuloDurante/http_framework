@@ -1,3 +1,4 @@
+// HTTP framework ************************************************
 (function(global){
 
   function easyHTTP() {
@@ -12,9 +13,7 @@
               var that = this;
               this.http.onload = function() {
                 if(that.http.status === 200) {
-                  (function(x, y){
-                    callback(x, y);
-                  }(null, that.http.responseText));
+                    callback(null, that.http.responseText);
 
                 } else {
                   callback('Error: ' + that.http.status);
@@ -94,6 +93,5 @@
             
       } // end prototype
 
- global._http = new easyHTTP(); 
+global._http = new easyHTTP();
 }(window));
-
