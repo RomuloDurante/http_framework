@@ -1,4 +1,4 @@
-# http_framework
+# http_framework :computer:
 
 The  **_http**  is the object that you will work with.
 
@@ -8,8 +8,8 @@ I'm create two version:
 
 * FETCH version
   * use the global method fetch() and promises
-
-I am a student, so feel free to correct my mistakes.. :thumbsup:
+___
+## I am a student, so feel free to correct my mistakes.. :thumbsup:
 ___
 
 > xhr - version
