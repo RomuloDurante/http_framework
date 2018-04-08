@@ -22,18 +22,6 @@
               this.http.send();
             },
 
-            getMultipleJSON: function(post) {
-              JSON.parse(post).forEach(element =>{this.data.push(element)});
-            },
-
-            getSingleJSON: function(post) {
-              this.data = JSON.parse(post);
-            },
-
-            getTxt: function(post) {
-              this.data = post;
-            },
-
             // POST method
             post: function(obj, callback) {
               this.http.open(obj.type, obj.url, true);
@@ -95,3 +83,16 @@
 
 global._http = new easyHTTP();
 }(window));
+
+
+_http.menu({ // you need create an object on the fly
+  type: 'GET', // option
+  url: 'test.txt' // option
+ }, function (err, data) { // the callback function
+            if(err){
+               /* do something */
+            } else {
+              console.log(data);
+            }
+          }               
+);
