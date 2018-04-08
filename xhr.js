@@ -83,16 +83,3 @@
 
 global._http = new easyHTTP();
 }(window));
-
-
-_http.menu({ // you need create an object on the fly
-  type: 'GET', // option
-  url: 'test.txt' // option
- }, function (err, data) { // the callback function
-            if(err){
-               /* do something */
-            } else {
-              console.log(data);
-            }
-          }               
-);
