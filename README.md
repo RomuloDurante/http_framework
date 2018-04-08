@@ -39,7 +39,7 @@ _http.menu({
   type: 'POST', // POST option
   url: 'your url here', // url option
   data:{ // data that you send to database
-          name: "Cielo",
+          name: "Cielo", // this is an example, it's can be whatever data you want (variables, objects, etc)
           code: "CIEL3",
           description: "Cielo is the first company ...",
           balance: {
@@ -49,7 +49,7 @@ _http.menu({
                                 margin: "23%"
                              }
                    }
-       }
+       }  
 }, (err, post) => err ? console.log(err): console.log(post) //callback using the arrow function and ternary operator
 );
 ```
