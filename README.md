@@ -21,7 +21,7 @@ Examples ->
 
 _http.menu({ // you need create an object on the fly
   type: 'GET', // GET option
-  url: 'test.txt' // URL option
+  url: 'test.txt' // url option
  }, function (err, data) { // the callback function
             if(err){
                /* do something */
@@ -37,8 +37,8 @@ _http.menu({ // you need create an object on the fly
 /* Always start with _http.menu({options}); */
 _http.menu({
   type: 'POST', // POST option
-  url: 'your url here', // URL option
-  data:{
+  url: 'your url here', // url option
+  data:{ // data that you send to database
           name: "Cielo",
           code: "CIEL3",
           description: "Cielo is the first company ...",
@@ -50,7 +50,7 @@ _http.menu({
                              }
                    }
        }
-}, (err, post) => err ? console.log(err): console.log(post) //callback using the ternary operator
+}, (err, post) => err ? console.log(err): console.log(post) //callback using the arrow function and ternary operator
 );
 ```
 
@@ -59,8 +59,8 @@ _http.menu({
 /* Always start with _http.menu({options}); */
 _http.menu({
   type: 'PUT', // PUT option
-  url: 'your url here', // URL option
-  data:{
+  url: 'your url here', // url option
+  data:{ // data that you replace in database
     title: "Custom post",
     body: "this is a custom post!"
     }
