@@ -87,7 +87,7 @@ Examples ->
 
 * GET
 ```javascript
-/* Always start with _http.menu({options}); */
+/* Start with _http.get() -> you don't need options here; */
 _http.get('your url here') // get method
 .then(function(data) {
   console.log(data) // do something whith your data here
@@ -99,7 +99,7 @@ _http.get('your url here') // get method
 
 * POST
 ```javascript
-/* Always start with _http.menu({options}); */
+/* Start with _http.post({options}); */
 _http.post({ // Create an object on the fly to options
   url: 'url here', // url option
   data: { // data option
@@ -112,7 +112,7 @@ _http.post({ // Create an object on the fly to options
 
 * PUT
 ```javascript
-/* Always start with _http.menu({options}); */
+/*Start with _http.put({options});*/
 _http.put({  // Create an object on the fly to options
   url:  'url here', // url option
   data: {
@@ -127,9 +127,9 @@ _http.put({  // Create an object on the fly to options
 
 * DELETE
 ```javascript
-/* Always start with _http.menu({options}); */
+/*Start with _http.delete({options}); */
 _http.delete({ // Create an object on the fly to options
-  url: 'https://jsonplaceholder.typicode.com/posts/2',
+  url:'url here', // url option
 }).then(data => console.log(data)) 
   .catch(err => console.log(err));
 
